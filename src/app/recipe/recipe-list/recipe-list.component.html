@@ -1,0 +1,5 @@
+<ul *ngIf="recipes$ | async as recipes">
+    <li *ngFor="let recipe of recipes.results">
+        {{ recipe.name }}
+    </li>
+</ul>
