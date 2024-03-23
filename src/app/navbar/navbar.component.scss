@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    .navbar-logo {
+      img {
+        max-height: 40px;
+        max-width: 150px;
+      }
+    }
+    .navbar-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      li {
+        margin-right: 1rem;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          text-decoration: none;
+          color: #333;
+          transition: color 0.3s ease;
+          &:hover {
+            color: #007bff;
+          }
+        }
+      }
+    }
+    .navbar-actions {
+      /* Add styles for login/logout buttons or user-related actions here */
+    }
+  }
+  
