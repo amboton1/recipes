@@ -1,5 +1,5 @@
 <ul *ngIf="recipes$ | async as recipes">
     <li *ngFor="let recipe of recipes.results">
-        {{ recipe.name }}
+        <img (click)="openModal(recipe)" src="{{recipe.thumbnail_url}}" alt="{{ recipe.name }}">
     </li>
 </ul>
