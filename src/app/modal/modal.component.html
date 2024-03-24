@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="content">
+        <img src="{{data.recipe.thumbnail_url}}" alt="{{data.recipe.name}}">
+        <p *ngIf="!(data.recipe.description)">There is no description</p>
+        <p *ngIf="data.recipe.description">{{data.recipe.description}}</p>
+        <button (click)="closeDialog()">Close</button>
+    </div>
+</div>
